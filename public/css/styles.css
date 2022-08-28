@@ -20,20 +20,25 @@ body {
   z-index: 2;
 }
 
-.top{
-    margin-top: -1px;
-    border-radius: 10px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+.top {
+  margin-top: -1px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
-.middle{
-    margin-top: -1px;
-    border-radius:0px ;
+.middle {
+  margin-top: -1px;
+  border-radius: 0px;
 }
-.buttom{
-    margin-top: -1px;
-    border-radius: 10px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    margin-bottom: 10px;
+.buttom {
+  margin-top: -1px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-bottom: 10px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

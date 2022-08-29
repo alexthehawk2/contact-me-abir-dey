@@ -6,4 +6,4 @@ link to this contact me form : http://abir-dey-contact.herokuapp.com/
 
 If you're reading this you can also contact me on Instagram @ig_alexthehawk incase you have any suggestions or query.
 
-Thanks for reading! Have a great day ahead
+Thanks for reading! Have a great day ahead.

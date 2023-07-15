@@ -1,36 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.js";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import ErrorPage from "./Error.jsx";
+import ErrorPage from "./Error";
 import "./assets/styles/style.css";
-import Success from "./Success.js";
-import Failure from "./Failure.js";
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/success",
-    element: <Success />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "failure",
-    element: <Failure />,
-    errorElement: <ErrorPage />,
-  },
-]);
+import Success from "./Success";
+import Failure from "./Failure";
 
-const rootElement = document.getElementById("root");
-if (rootElement) {
-  ReactDOM.createRoot(rootElement).render(
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
-  );
-}
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/gg" element={<Success />} />
+        <Route path="/failure" element={<Failure />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+);

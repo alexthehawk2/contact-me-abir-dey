@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/gg" element={<Success />} />
+        <Route path="/success" element={<Success />} />
         <Route path="/failure" element={<Failure />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
